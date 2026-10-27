@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile - coolusername</title>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <link rel="stylesheet" href="styleProfile.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+ <div class="go-back">
+    <button onclick="window.location.href='main.html'">
+        ← Go to Main
+    </button>
+    <div class="profile-container">
+        <div class="changecolor">
+                    <label for="colorField">Change Color:</label>
+                    <input type="color" id="colorField">
+        </div>
+        <div class="profile-header">
+            <div class="profile-picture-container">
+                <img id="thePFP" class="profile-picture" src="img/pfp.png" alt="Profile Picture">
+                <img src="img/cam.png" class="camera-icon" id="camera">
+                <input type="file" id="file" class="file-input" accept="image/*">
+            </div>
+
+                    <div class="user-info">
+            <h1 class="username">coolusername</h1>
+            
+            <div class="buttons">
+                <button id="editBtn"><i class="fa fa-pencil-square-o"></i> Change profile picture</button>
+                <button id="saveBtn" style="display:none;">Save Changes</button>
+                <button id="cancelBtn" style="display:none;">Cancel</button>
+            </div>
+        </div>
+        </div>
+
+           <div class="profile-info">
+    <div class="info-item">
+        <strong><i class="fa fa-pencil-square-o"></i> Bio:</strong>
+        <p id="bio" contenteditable="true">...</p>
+    </div>
+    <div class="info-item">
+        <strong><i class="fa fa-pencil-square-o"></i> Location:</strong>
+        <p id="location" contenteditable="false">...</p>
+    </div>
+    <div class="info-item">
+        <strong><i class="fa fa-pencil-square-o"></i> Full Name:</strong>
+    <p id="fullName" contenteditable="false">...</p>    </div>
+</div>
+    </div>
+
+    </div>
+
+    <script src="profile.js"></script>
+</body>
+</html>

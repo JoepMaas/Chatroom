@@ -1,0 +1,103 @@
+body {
+  font-family: Arial, sans-serif;
+    background-color: #323339;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+    font-size: 1vw;
+}
+
+.container {
+    background-color: #3a3b41;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 2vw;
+    border-radius: .5vw;
+    height: 16vw;
+    width: 16vw;
+    border: 2px solid #1d1e22;
+    color: white;
+
+}
+
+.profileContainer {
+    background-color: #3a3b41;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  margin-left: 2vw;
+  border-radius: .5vw;
+  height: 16vw;
+  width: 20vw;
+    border: 2px solid #1d1e22;
+    color: white;
+
+}
+
+.profileTitle {
+padding: 5px;
+}
+
+input {
+  display: flex;
+  margin: .5vw;
+  padding: .2vw;
+  width: 14vw;
+
+
+}
+
+button {
+  font-size: 1vw;
+  margin: .2vw;
+  padding: .5vw;
+  cursor: pointer;
+
+
+}
+
+#message {
+  color: red;
+}
+
+#username {
+  font-size: 1vw;
+}
+
+#imgInput {
+    font-size: 1vw;
+    margin: .2vw;
+    padding: .5vw;
+    cursor: pointer;
+    display:flex;
+    flex-direction: column;
+    white-space: normal;
+}
+#profileContainer input[type="file"]{
+    color: #1d1e22;
+}
+
+#file {
+  height: 10vw;
+  width: 10vw;
+}
+
+#preview {
+
+  border-radius: 4vw;
+  width: 7vw;
+  height: 7vw;
+}
+
+#colorField {
+  width: 8vw;
+  height: 2vw;
+  border: none;
+  background: none;
+  padding: 0;
+}
+
+

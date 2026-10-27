@@ -1,0 +1,64 @@
+# Project suggestions
+## Web
+- A travel planner
+  - Booking a stay
+  - Which events/hotspots can you attend while you're there
+  - A packing list generator based on destination, weather and trip duration
+  - A planning feature where people can suggest and vote for activities
+  - You can use API's such as Booking.com/AirBnB
+- A music recommendations app
+  - Where you can pick a song and find similar songs
+  - People can recommend other songs that are similar, or vote for ones already in the list
+  - You can listen to a preview of the similar songs
+  - A discover history/favorite list so you can come back to certain songs
+  - You can use API's such as Deezer and LastFM
+- A zoo caretaker app
+  - Where you can see which animals you should still visit during your day
+  - You can take notes about the state of the animals
+  - There's set feeding times, caretakers get alerted when the time is coming up
+  - A map of the zoo to navigate
+  - A summary of the day from your notes for the other caretakers
+- An app for teachers
+  - So they can see where other teachers are
+  - See if other teachers are available atm
+  - Can request a lesson to be taken over by another teacher in case of sickness or other reasons (with a notification)
+  - A calendar integration so that availability is automatically updated
+  - A live status (green/orange/red) for each teacher
+- Board game night organizer
+  - Add games to the total game list
+  - Suggest dates for game nights
+  - RSVP feature to let people know if you'll join
+  - Keep a win/loss history per player
+  - A leaderboard for a period of time for who's doing best (Take into account that less game nights should decrease your score)
+
+## Game
+- City builder
+  - You can place buildings and roads
+  - You have limited resources
+  - There's a happiness/satisfaction meter
+  - The city is alive and responds to the buildings you've built
+  - There are events, like disasters, which influence the city
+  - There's a day/night cycle
+- Strategy game
+  - A game where you try to outsmart your opponents
+  - You can build buildings and units
+  - You have to gather resources to make these units and buildings
+  - There's a fog of war so you can't see the full map without exploring
+  - You have a tech tree with which you can unlock more powerful units
+- A sandbox game
+  - Freedom to do whatever you want with the tools at your disposal
+  - Add tools/abilities to give the player a lot of different possibilities
+  - These tools should unlock/be unhidden over time so player's don't get overwhelmed
+  - Give the player a goal so that they don't aimlessly walk around
+- Escape room
+  - A theme that is consistent throughout the game
+  - Different puzzles that need multiple people to solve the m
+  - A hint system so that they don't get permanently stuck
+  - A leaderboard
+- Turn based tactics (card game)
+  - You get a small team to start the game with
+  - You earn new stuff after each battle, you can choose from a list of options.
+  - This stuff can be, for example:
+    - Money
+    - New team members
+    - Upgrades

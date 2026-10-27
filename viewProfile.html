@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="styleViewProfile.css">
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+</head>
+<body>
+    <div class="profile-container">
+        <button class="back-btn" onclick="window.history.back()">← Back to Chat</button>
+
+        <div class="profile-header">
+            <img id="pfp" class="profile-picture" src="free-user-icon-3296-thumb.png" alt="Profile Picture">
+            <h1 id="username" class="username"></h1>
+        </div>
+
+        <div class="bio-section">
+            <strong>Bio:</strong>
+            <p id="bioText">This user hasn't written a bio yet.</p>
+        </div>
+
+        <div class="info-section">
+            <div class="info-item">
+                <strong>Full Name:</strong> 
+                <span id="fullName">Unknown</span>
+            </div>
+            <div class="info-item">
+                <strong>Location:</strong> 
+                <span id="location">Unknown</span>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="viewProfile.js"></script>
+</body>
+</html>

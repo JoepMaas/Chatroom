@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="handler.js"></script>
+    <script src="profanity.js"></script>
+</head>
+<body class="body">
+<div class="fullBox">
+
+    <div class="fullSidebar" id="groups">
+        <div class="sidebar" onclick="setChatroom('main')" id="main">
+            <div class="sidebarHeader">
+
+                <div class="chatroomBox" >
+                    <div class="ding"></div>
+
+                    <div class="userName">
+                        main chatroom
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="sidebarMessage sidebar" id="main_latestmsg">
+                ...
+            </div>
+
+        </div>
+
+
+
+
+
+
+    </div>
+
+
+
+    <div class="chatBox">
+        <div class="center">
+        <h4 class="chatName" id="chatName">main</h4>
+        </div>
+
+
+
+        <div id="chat">
+            <!-- Here come the messages -->
+        </div>
+
+
+
+        <div class="inputBox">
+
+
+            <textarea
+                    onkeydown="maybeSend()"
+                    class = "inputField"
+                    type="text"
+                    placeholder="start typing..."
+                    id="inputtext"
+                    name="name"
+                    maxlength="500"
+                    size="100" ></textarea>
+
+
+            <div class="Buttons">
+                <a onclick="send()"> <i class="fa fa-arrow-right" href="/"></i></a>
+                <a href=""> <i class="fa fa-upload" href="/"></i></a>
+            </div>
+
+
+        </div>
+    </div>
+
+
+
+
+    </div>
+
+</div>
+
+
+
+<div class="profileBox">
+    <div class="name-and-pfp" >
+        
+        <img id="mainPFP" class="profile-pfp" src="free-user-icon-3296-thumb.png" alt="Profile Picture">
+
+        <div class="status"></div>
+
+        <div class="profile-user">
+            <b id="mainUsername">Joep</b>
+        </div>
+
+    </div>
+
+    <div id="mainBio" class="bio">
+        insert status here (appears as a bubble when hovering over someone??)
+    </div>
+
+    <div class="profile-edit-button">
+        <button onclick="window.location.href='profile.html'">Edit Profile</button>
+    </div>
+</div>
+
+<div class="themeBox">
+    <div class="color">
+        Background color:
+        <input type="color" id="bg-color">
+
+    </div>
+
+    <div class="color">
+        second color:
+        <input type="color" id="secondColor">
+
+    </div>
+
+    <div class="color">
+         sidebar color:
+         <input type="color" id="sidebarColor">
+
+    </div>
+
+    <div class="color">
+        outlines:
+        <input type="color" id="outline-color">
+
+    </div>
+
+    <div class="color">
+        text color:
+         <input type="color" id="text-color">
+
+    </div>
+
+    <div class="color">
+        secondary text color:
+        <input type="color" id="secondary-text-color">
+
+    </div>
+    <div class="color">
+        accent color:
+        <input type="color" id="accent-color">
+
+    </div>
+
+    <div class="themeButton">
+        <button onclick="resetTheme()">reset theme</button>
+    </div>
+    <div class="themeButton">
+        <button onclick="randomizeTheme()">RANDOMIZE COLORS</button>
+    </div>
+</div>
+
+<div class="message-search">
+    search for messages...
+    <input type="text" class="search-input" placeholder="search...">
+</div>
+
+<div class="userList">
+    <div class="user-in-list-box">
+    <img class="list-pfp" src="free-user-icon-3296-thumb.png">
+
+    <div class="user-in-list">
+        <div class="userlist-status"></div>Noah
+    </div>
+    </div>
+
+    <div class="user-in-list-box">
+        <img class="list-pfp" src="free-user-icon-3296-thumb.png">
+
+        <div class="user-in-list">
+            <div class="userlist-status"></div>Dmytro
+        </div>
+
+    </div>
+
+    <div class="user-in-list-box">
+        <img class="list-pfp" src="free-user-icon-3296-thumb.png">
+
+        <div class="user-in-list">
+             <div class="userlist-status"></div>Flort
+        </div>
+    </div>
+</div>
+
+<div class="themeBox">
+    <button onclick="BackToLogin()">back to login</button>
+</div>
+
+</body>
+ <script src="themeHandler.js"></script>
+</html>

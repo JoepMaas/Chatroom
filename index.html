@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Username Login</title>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <link rel="stylesheet" href="styleLogin.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2 id="title">Login</h2>
+
+      <input type="text" id="username" placeholder="Enter username" />
+      <input type="color" id="colorField">
+
+      <button onclick="login()">Login</button>
+      <p id="message"></p>
+    </div>
+    <div class="profileContainer">
+      <h2 class="profileTitle">Profile Picture</h2>
+
+      <img id="preview" src="free-user-icon-3296-thumb.png">
+     <input type="file" id="imgInput" accept="image/*">
+      
+    </div>
+        <script src="loginScript.js"></script>
+    <script src="profanity.js"></script>
+  </body>
+</html>
